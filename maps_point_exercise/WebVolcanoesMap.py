@@ -21,7 +21,8 @@ def color_producer(elevation):
 
 
 for lat, long, elevation in zip(latitude, longitude, elevation):
-    fg.add_child(folium.CircleMarker(location=[lat, long], popup=str(elevation) + "m", radius=6, fill_color=color_producer(elevation), color = 'grey', fill_opacity=0.7))
+    fg.add_child(folium.CircleMarker(location=[lat, long], popup=str(elevation) + "m", radius=6,
+                                     fill_color=color_producer(elevation), color = 'grey', fill_opacity=0.7))
 
 map.add_child(fg)
 map.save("Volcanoes.html")

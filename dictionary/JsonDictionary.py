@@ -25,12 +25,12 @@ def find_in_dictionary():
 
 while True:
     data = json.load(open("data.json"))
-    dictionaryAnswer = find_in_dictionary()
-    if type(dictionaryAnswer) == list:
-        for statement in dictionaryAnswer:
+    dictionary_answer = find_in_dictionary()
+    if type(dictionary_answer) == list:
+        for statement in dictionary_answer:
             print(statement)
     else:
-        print(dictionaryAnswer)
+        print(dictionary_answer)
 
     answer = input("Would you like to ask for something else? If yes press Y if not press N")
     if answer == "N":

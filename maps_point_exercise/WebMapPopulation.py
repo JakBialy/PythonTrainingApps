@@ -1,5 +1,4 @@
 import folium
-import pandas
 
 map = folium.Map(tiles="Mapbox Bright")
 
